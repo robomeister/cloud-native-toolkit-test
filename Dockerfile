@@ -1,6 +1,7 @@
 FROM registry.access.redhat.com/ubi8/nodejs-12:1-70 AS builder
 
 USER root
+#USER root
 RUN yum install -y python36 && yum clean all
 
 WORKDIR /opt/app-root/src
